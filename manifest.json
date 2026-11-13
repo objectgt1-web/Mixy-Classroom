@@ -1,1 +1,23 @@
 
+
+{
+  "manifest_version": 3,
+  "name": "Mixy Blocker Classroom",
+  "version": "1.0.0",
+  "description": "Classroom website management and screen sharing",
+  "permissions": [
+    "storage",
+    "tabs",
+    "declarativeNetRequest"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "options_page": "dashboard.html"
+}
